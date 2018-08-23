@@ -9,4 +9,9 @@ function fuzzyMatch(array, string){
   return array.filter(function (name){
     return name.slice(0,lengthOfLetters) === string;
   });
-}
+};
+function matchName(array, string){
+  return array.filter(function(name){
+    return name.name === string.name;
+  });
+};
