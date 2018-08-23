@@ -11,7 +11,7 @@ function fuzzyMatch(array, string){
   });
 };
 function matchName(array, string){
-  return array.filter(function(name){
-    return name.name.toLowerCase() === name.toLowerCase();
+  return array.filter(function(Obj){
+    return Obj.name.toLowerCase() === string.toLowerCase();
   });
 };
