@@ -5,7 +5,8 @@ function findMatching(array, string){
   });
 };
 function fuzzyMatch(array, string){
+  let lengthOfLetters = string.length;
   return array.filter(function (name){
-    return name.slice(0,1) === string;
+    return name.slice(0,lengthOfLetters) === string;
   });
 }
