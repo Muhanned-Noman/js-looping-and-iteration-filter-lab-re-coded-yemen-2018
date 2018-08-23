@@ -4,3 +4,8 @@ function findMatching(array, string){
     return name.toLowerCase() === string.toLowerCase();
   });
 };
+function fuzzyMatch(array, string){
+  return array.filter(function (name){
+    return name.slice(0,1) === string;
+  });
+}
